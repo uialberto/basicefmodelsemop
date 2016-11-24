@@ -27,7 +27,7 @@ namespace efsemop.Controllers
         // GET: SubAlcaldia
         public ActionResult Index(string texto, string sortOrder, string currentFilter, int? page)
         {
-            var pageSize = 5;
+            var pageSize = 15;
             ViewBag.CurrentSort = sortOrder;
             ViewBag.NombreSortParm = string.IsNullOrEmpty(sortOrder) ? "nombre_desc" : string.Empty;
             ViewBag.ZonaSortParm = sortOrder == "Zona" ? "zona_desc" : "Zona";
